@@ -11,15 +11,21 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "ng-gpt": [
+        "dist/ng-gpt/ng-gpt",
+        "dist/ng-gpt",
+        "dist/ng-gpt/ng-gpt",
+        "dist/ng-gpt"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
