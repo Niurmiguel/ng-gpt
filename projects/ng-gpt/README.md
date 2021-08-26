@@ -103,7 +103,7 @@ You at need to pass `adTagUrl` and `sizes`
 
 ## Documentation
 
-- [Getting Started](/docs/GettingStarted.md) A more detailed Getting Started Guide
+- [Getting Started](/projects/ng-gpt/docs/GettingStarted.md) A more detailed Getting Started Guide
 
 ## To run examples:
 
