@@ -26,6 +26,7 @@ interface PrivacySettingsConfig {
   limitedAds?: boolean | null | undefined;
   restrictDataProcessing?: boolean | null | undefined;
   underAgeOfConsent?: boolean | null | undefined;
+  nonPersonalizedAds?: boolean | null | undefined;
 }
 
 interface CommandArray {
@@ -234,13 +235,6 @@ export interface PubAdsService extends Service {
    * @param ppid An alphanumeric ID provided by the publisher with a recommended maximum of 150 characters.
    */
   setPublisherProvidedId(ppid: string): PubAdsService;
-
-  /**
-   * Configures whether the page should request personalized or non-personalized ads.
-   *
-   * @param nonPersonalizedAds 0 for personalized ads, 1 for non-personalized ads.
-   */
-  setRequestNonPersonalizedAds(nonPersonalizedAds: 0 | 1): PubAdsService;
 
   /**
    * Sets the page-level preferences for SafeFrame configuration.
