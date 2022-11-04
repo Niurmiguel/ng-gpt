@@ -82,7 +82,6 @@ export class NgGptService {
     pubads.disableInitialLoad();
     pubads.setForceSafeFrame(this.forceSafeFrame);
     pubads.setCentering(this.centering);
-    pubads.setRequestNonPersonalizedAds(this.personalizedAds ? 0 : 1);
 
     this.pubadsSetConfig.addLocation(this.address, pubads);
     this.pubadsSetConfig.addPPID(this.ppid, pubads);
@@ -91,6 +90,7 @@ export class NgGptService {
 
     pubads.setPrivacySettings({
       limitedAds: this.limitedAds,
+      nonPersonalizedAds: !this.personalizedAds,
     });
 
     if (this.config.singleRequestMode !== true) {
